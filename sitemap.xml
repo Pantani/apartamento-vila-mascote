@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://pantani.github.io/apartamento-vila-mascote/</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg</image:loc>
+      <image:title>Apartamento à venda na Vila Mascote – 2 quartos, 55 m², R$ 480.000</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/01-sala-1.jpg</image:loc>
+      <image:title>Sala do apartamento à venda na Vila Mascote, São Paulo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/02-cozinha-1.jpg</image:loc>
+      <image:title>Cozinha planejada do apartamento reformado na Vila Mascote</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/03-suite-1.jpg</image:loc>
+      <image:title>Suíte do apartamento à venda no Condomínio Ville Dijon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/08-varanda.jpg</image:loc>
+      <image:title>Vista da sacada para a piscina e quadra do Condomínio Ville Dijon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/predio-1.jpg</image:loc>
+      <image:title>Fachada do Condomínio Ville Dijon na Vila Mascote, Zona Sul de São Paulo</image:title>
+    </image:image>
+  </url>
+</urlset>
