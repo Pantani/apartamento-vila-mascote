@@ -9,7 +9,7 @@ Site estático do anúncio: **https://pantani.github.io/apartamento-vila-mascote
 ## Estrutura
 
 - `index.html` — página única (HTML/CSS/JS puros, sem build)
-- `fotos/` — fotos do imóvel (1200×800)
+- `fotos/` — fotos do imóvel e planta com áreas por ambiente
 - `sitemap.xml` / `robots.txt` — SEO
 - `.nojekyll` — desativa o Jekyll no GitHub Pages
 
