@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Apartamento à Venda na Vila Mascote – 2 Quartos, Suíte, 55 m² | R$ 470.000 Direto com Proprietário</title>
-  <meta name="description" content="Apartamento à venda na Vila Mascote, Zona Sul de São Paulo, direto com o proprietário: 55 m², 2 quartos (1 suíte), 2 banheiros, vaga + depósito privativo. Totalmente reformado, alto padrão, pronto para morar. Condomínio Ville Dijon com lazer completo. R$ 470.000 — agende sua visita pelo WhatsApp.">
-  <meta name="keywords" content="apartamento vila mascote, apartamento à venda vila mascote, venda de apartamento vila mascote, apartamento 2 quartos vila mascote, comprar apartamento vila mascote, apartamento à venda zona sul, venda de apartamento em são paulo, apartamento direto com proprietário são paulo, apartamento reformado zona sul, apartamento com suíte zona sul, ville dijon, apartamento pronto para morar são paulo">
+  <title>Apartamento à venda na Vila Mascote – 55 m², suíte e vaga | R$ 470 mil</title>
+  <meta name="description" content="Apartamento reformado de 55 m² na Vila Mascote, com 2 quartos, suíte, vaga e depósito. R$ 470 mil, direto com o proprietário. Agende uma visita.">
   <meta name="author" content="Proprietário">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://pantani.github.io/apartamento-vila-mascote/">
@@ -33,14 +32,14 @@
   <meta name="twitter:image" content="https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2">
 
   <meta name="theme-color" content="#1f1b16">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A1%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="preload" as="image" href="fotos/01-sala-1.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="fotos/01-sala-1.jpg" type="image/jpeg" fetchpriority="high">
 
   <!-- Structured Data: Real Estate Listing -->
   <script type="application/ld+json">
@@ -51,6 +50,7 @@
     "url": "https://pantani.github.io/apartamento-vila-mascote/",
     "description": "Apartamento de 55 m² totalmente reformado com materiais de alto padrão, 2 dormitórios (1 suíte), 2 banheiros, 1 vaga de garagem e depósito privativo de aproximadamente 1 m². Condomínio Ville Dijon, Vila Mascote, Zona Sul de São Paulo.",
     "datePosted": "2026-07-24",
+    "dateModified": "2026-07-28",
     "image": [
       "https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2",
       "https://pantani.github.io/apartamento-vila-mascote/fotos/01-sala-1.jpg",
@@ -115,7 +115,7 @@
         "name": "Como funcionam as visitas?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "As visitas são feitas somente com agendamento prévio, direto com o proprietário pelo WhatsApp (11) 98358-7422. Por questões de segurança do condomínio e do inquilino atual (que permanece no imóvel até 31/07), o número do apartamento é informado apenas a compradores realmente interessados, com visita previamente marcada."
+          "text": "As visitas são feitas somente com agendamento prévio, direto com o proprietário pelo WhatsApp (11) 98358-7422. Por questões de segurança do condomínio e do ocupante atual, o número do apartamento é informado apenas a compradores realmente interessados, com visita previamente marcada."
         }
       },
       {
@@ -220,7 +220,8 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    img { max-width: 100%; height: auto; display: block; }
+    picture, img { display: block; }
+    img { max-width: 100%; height: auto; }
     a { color: var(--btn); }
     a:hover { color: var(--btn-hover); }
 
@@ -685,7 +686,7 @@
         <strong>R$ 470.000</strong>
           <em>R$ 8.545/m² · Condomínio R$ 1.343/mês · IPTU ≈ R$ 49/mês</em>
       </div>
-      <div class="hero-chips" aria-label="Resumo do imóvel">
+      <div class="hero-chips" role="group" aria-label="Resumo do imóvel">
         <span class="chip">55 m²</span>
         <span class="chip">2 quartos · 1 suíte</span>
         <span class="chip">2 banheiros</span>
@@ -700,7 +701,7 @@
   </header>
 
   <!-- ===== Stats band ===== -->
-  <div class="stats" aria-label="Números do imóvel">
+  <div class="stats" role="region" aria-label="Números do imóvel">
     <div class="container">
       <div class="stats-grid">
         <div class="stat"><strong>55 m²</strong><span>Área útil bem distribuída</span></div>
@@ -724,7 +725,7 @@
         </div>
         <div class="about-media reveal">
           <div class="accent" aria-hidden="true"></div>
-          <img src="fotos/02-cozinha-1.jpg" width="1200" height="800" alt="Cozinha reformada com armários planejados e cooktop a gás no apartamento à venda na Vila Mascote, Zona Sul de São Paulo" loading="lazy">
+          <picture><source type="image/webp" srcset="fotos/02-cozinha-1-640.webp 640w, fotos/02-cozinha-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/02-cozinha-1.jpg" width="1200" height="800" alt="Cozinha reformada com armários planejados e cooktop a gás no apartamento à venda na Vila Mascote, Zona Sul de São Paulo" loading="lazy"></picture>
         </div>
       </div>
     </div>
@@ -793,7 +794,10 @@
         </div>
         <div class="reveal">
           <button class="planta-card" id="plantaBtn" type="button">
-            <img src="fotos/planta-areas.png" width="2200" height="3005" alt="Planta do apartamento de 55 m² à venda na Vila Mascote com áreas de piso por ambiente" loading="lazy">
+            <picture>
+              <source type="image/webp" srcset="fotos/planta-areas.webp">
+              <img src="fotos/planta-areas.png" width="2200" height="3005" alt="Planta do apartamento de 55 m² à venda na Vila Mascote com áreas de piso por ambiente" loading="lazy">
+            </picture>
             <span>Toque para ampliar a planta com as áreas de cada ambiente</span>
           </button>
         </div>
@@ -843,94 +847,94 @@
       </div>
       <div class="gallery-grid" id="galleryGrid">
         <button class="gallery-item featured" data-cat="sala" data-caption="Sala de estar — porcelanato e iluminação pendente">
-          <img src="fotos/01-sala-1.jpg" alt="Sala de estar do apartamento à venda na Vila Mascote, São Paulo, com porcelanato e trilho de spots" loading="lazy" width="1200" height="800"><span class="tag">Sala</span>
+          <picture><source type="image/webp" srcset="fotos/01-sala-1-640.webp 640w, fotos/01-sala-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/01-sala-1.jpg" alt="Sala de estar do apartamento à venda na Vila Mascote, São Paulo, com porcelanato e trilho de spots" loading="lazy" width="1200" height="800"></picture><span class="tag">Sala</span>
         </button>
         <button class="gallery-item" data-cat="sala" data-caption="Sala — vista para a sacada com fechamento de vidro">
-          <img src="fotos/01-sala-2.jpg" alt="Sala do apartamento reformado na Vila Mascote com acesso à sacada envidraçada" loading="lazy" width="1200" height="800"><span class="tag">Sala</span>
+          <picture><source type="image/webp" srcset="fotos/01-sala-2-640.webp 640w, fotos/01-sala-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/01-sala-2.jpg" alt="Sala do apartamento reformado na Vila Mascote com acesso à sacada envidraçada" loading="lazy" width="1200" height="800"></picture><span class="tag">Sala</span>
         </button>
         <button class="gallery-item" data-cat="sala" data-caption="Sala — ângulo do jantar">
-          <img src="fotos/01-sala-3.jpg" alt="Ambiente de jantar do apartamento à venda na Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Sala</span>
+          <picture><source type="image/webp" srcset="fotos/01-sala-3-640.webp 640w, fotos/01-sala-3.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/01-sala-3.jpg" alt="Ambiente de jantar do apartamento à venda na Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Sala</span>
         </button>
         <button class="gallery-item" data-cat="sala" data-caption="Sala — visão ampla do ambiente">
-          <img src="fotos/01-sala-4.jpg" alt="Visão ampla da sala do apartamento reformado no Condomínio Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Sala</span>
+          <picture><source type="image/webp" srcset="fotos/01-sala-4-640.webp 640w, fotos/01-sala-4.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/01-sala-4.jpg" alt="Visão ampla da sala do apartamento reformado no Condomínio Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Sala</span>
         </button>
         <button class="gallery-item" data-cat="cozinha" data-caption="Cozinha — armários planejados e cooktop a gás">
-          <img src="fotos/02-cozinha-1.jpg" alt="Cozinha planejada com cooktop e forno a gás no apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Cozinha</span>
+          <picture><source type="image/webp" srcset="fotos/02-cozinha-1-640.webp 640w, fotos/02-cozinha-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/02-cozinha-1.jpg" alt="Cozinha planejada com cooktop e forno a gás no apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Cozinha</span>
         </button>
         <button class="gallery-item" data-cat="cozinha" data-caption="Cozinha — torneira gourmet com 4 funções">
-          <img src="fotos/02-cozinha-2.jpg" alt="Torneira gourmet com 4 funções na cozinha do apartamento reformado na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Cozinha</span>
+          <picture><source type="image/webp" srcset="fotos/02-cozinha-2-640.webp 640w, fotos/02-cozinha-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/02-cozinha-2.jpg" alt="Torneira gourmet com 4 funções na cozinha do apartamento reformado na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Cozinha</span>
         </button>
         <button class="gallery-item" data-cat="cozinha" data-caption="Cozinha — bancada e revestimentos">
-          <img src="fotos/02-cozinha-4.jpg" alt="Bancada da cozinha do apartamento à venda no Condomínio Ville Dijon, São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Cozinha</span>
+          <picture><source type="image/webp" srcset="fotos/02-cozinha-4-640.webp 640w, fotos/02-cozinha-4.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/02-cozinha-4.jpg" alt="Bancada da cozinha do apartamento à venda no Condomínio Ville Dijon, São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Cozinha</span>
         </button>
         <button class="gallery-item" data-cat="cozinha" data-caption="Cozinha — visão geral">
-          <img src="fotos/02-cozinha-5.jpg" alt="Visão geral da cozinha planejada do apartamento reformado na Vila Mascote, Zona Sul" loading="lazy" width="1200" height="800"><span class="tag">Cozinha</span>
+          <picture><source type="image/webp" srcset="fotos/02-cozinha-5-640.webp 640w, fotos/02-cozinha-5.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/02-cozinha-5.jpg" alt="Visão geral da cozinha planejada do apartamento reformado na Vila Mascote, Zona Sul" loading="lazy" width="1200" height="800"></picture><span class="tag">Cozinha</span>
         </button>
         <button class="gallery-item featured" data-cat="suite" data-caption="Suíte — armário planejado">
-          <img src="fotos/03-suite-1.jpg" alt="Suíte com armário planejado no apartamento à venda na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Suíte</span>
+          <picture><source type="image/webp" srcset="fotos/03-suite-1-640.webp 640w, fotos/03-suite-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/03-suite-1.jpg" alt="Suíte com armário planejado no apartamento à venda na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Suíte</span>
         </button>
         <button class="gallery-item" data-cat="suite" data-caption="Suíte — ambiente completo">
-          <img src="fotos/03-suite-2.jpg" alt="Suíte do apartamento reformado de 2 dormitórios na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Suíte</span>
+          <picture><source type="image/webp" srcset="fotos/03-suite-2-640.webp 640w, fotos/03-suite-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/03-suite-2.jpg" alt="Suíte do apartamento reformado de 2 dormitórios na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Suíte</span>
         </button>
         <button class="gallery-item" data-cat="suite" data-caption="Suíte — outro ângulo">
-          <img src="fotos/03-suite-3.jpg" alt="Dormitório suíte do apartamento à venda no Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Suíte</span>
+          <picture><source type="image/webp" srcset="fotos/03-suite-3-640.webp 640w, fotos/03-suite-3.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/03-suite-3.jpg" alt="Dormitório suíte do apartamento à venda no Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Suíte</span>
         </button>
         <button class="gallery-item" data-cat="suite" data-caption="Suíte — detalhe">
-          <img src="fotos/03-suite-4.jpg" alt="Detalhe da suíte reformada do apartamento na Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Suíte</span>
+          <picture><source type="image/webp" srcset="fotos/03-suite-4-640.webp 640w, fotos/03-suite-4.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/03-suite-4.jpg" alt="Detalhe da suíte reformada do apartamento na Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Suíte</span>
         </button>
         <button class="gallery-item" data-cat="suite" data-caption="Suíte — ventilador de teto">
-          <img src="fotos/07-ventilador-teto-suite.jpg" alt="Ventilador de teto na suíte do apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Suíte</span>
+          <picture><source type="image/webp" srcset="fotos/07-ventilador-teto-suite-640.webp 640w, fotos/07-ventilador-teto-suite.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/07-ventilador-teto-suite.jpg" alt="Ventilador de teto na suíte do apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Suíte</span>
         </button>
         <button class="gallery-item" data-cat="banheiros" data-caption="Banheiro da suíte — bancada em mármore e cuba de sobrepor">
-          <img src="fotos/04-banheiro-suite-1.jpg" alt="Banheiro da suíte com bancada em mármore e louças Deca no apartamento reformado, Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Banheiro suíte</span>
+          <picture><source type="image/webp" srcset="fotos/04-banheiro-suite-1-640.webp 640w, fotos/04-banheiro-suite-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/04-banheiro-suite-1.jpg" alt="Banheiro da suíte com bancada em mármore e louças Deca no apartamento reformado, Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Banheiro suíte</span>
         </button>
         <button class="gallery-item" data-cat="banheiros" data-caption="Banheiro da suíte — box com nicho">
-          <img src="fotos/04-banheiro-suite-2.jpg" alt="Box com nicho no banheiro da suíte do apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Banheiro suíte</span>
+          <picture><source type="image/webp" srcset="fotos/04-banheiro-suite-2-640.webp 640w, fotos/04-banheiro-suite-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/04-banheiro-suite-2.jpg" alt="Box com nicho no banheiro da suíte do apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Banheiro suíte</span>
         </button>
         <button class="gallery-item" data-cat="quarto" data-caption="Segundo dormitório">
-          <img src="fotos/05-quarto-1.jpg" alt="Segundo dormitório do apartamento de 2 quartos à venda na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Quarto</span>
+          <picture><source type="image/webp" srcset="fotos/05-quarto-1-640.webp 640w, fotos/05-quarto-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/05-quarto-1.jpg" alt="Segundo dormitório do apartamento de 2 quartos à venda na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Quarto</span>
         </button>
         <button class="gallery-item" data-cat="quarto" data-caption="Segundo dormitório — outro ângulo">
-          <img src="fotos/05-quarto-2.jpg" alt="Quarto do apartamento reformado no Condomínio Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Quarto</span>
+          <picture><source type="image/webp" srcset="fotos/05-quarto-2-640.webp 640w, fotos/05-quarto-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/05-quarto-2.jpg" alt="Quarto do apartamento reformado no Condomínio Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Quarto</span>
         </button>
         <button class="gallery-item" data-cat="quarto" data-caption="Segundo dormitório — detalhe">
-          <img src="fotos/05-quarto-3.jpg" alt="Dormitório com porcelanato no apartamento à venda na Zona Sul de São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Quarto</span>
+          <picture><source type="image/webp" srcset="fotos/05-quarto-3-640.webp 640w, fotos/05-quarto-3.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/05-quarto-3.jpg" alt="Dormitório com porcelanato no apartamento à venda na Zona Sul de São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Quarto</span>
         </button>
         <button class="gallery-item" data-cat="quarto" data-caption="Segundo dormitório — visão geral">
-          <img src="fotos/05-quarto-5.jpg" alt="Visão geral do segundo quarto do apartamento reformado na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Quarto</span>
+          <picture><source type="image/webp" srcset="fotos/05-quarto-5-640.webp 640w, fotos/05-quarto-5.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/05-quarto-5.jpg" alt="Visão geral do segundo quarto do apartamento reformado na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Quarto</span>
         </button>
         <button class="gallery-item" data-cat="banheiros" data-caption="Banheiro social — bancada em mármore">
-          <img src="fotos/06-banheiro-1.jpg" alt="Banheiro social com bancada em mármore no apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Banheiro social</span>
+          <picture><source type="image/webp" srcset="fotos/06-banheiro-1-640.webp 640w, fotos/06-banheiro-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/06-banheiro-1.jpg" alt="Banheiro social com bancada em mármore no apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Banheiro social</span>
         </button>
         <button class="gallery-item" data-cat="banheiros" data-caption="Banheiro social — box com nicho">
-          <img src="fotos/06-banheiro-2.jpg" alt="Box com nicho e torneiras em inox no banheiro social, apartamento Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Banheiro social</span>
+          <picture><source type="image/webp" srcset="fotos/06-banheiro-2-640.webp 640w, fotos/06-banheiro-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/06-banheiro-2.jpg" alt="Box com nicho e torneiras em inox no banheiro social, apartamento Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Banheiro social</span>
         </button>
         <button class="gallery-item" data-cat="banheiros" data-caption="Banheiro social — detalhe dos acabamentos">
-          <img src="fotos/06-banheiro-3.jpg" alt="Acabamentos de alto padrão no banheiro do apartamento reformado, Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Banheiro social</span>
+          <picture><source type="image/webp" srcset="fotos/06-banheiro-3-640.webp 640w, fotos/06-banheiro-3.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/06-banheiro-3.jpg" alt="Acabamentos de alto padrão no banheiro do apartamento reformado, Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Banheiro social</span>
         </button>
         <button class="gallery-item" data-cat="area" data-caption="Lavanderia">
-          <img src="fotos/07-lavanderia.jpg" alt="Lavanderia do apartamento à venda na Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Lavanderia</span>
+          <picture><source type="image/webp" srcset="fotos/07-lavanderia-640.webp 640w, fotos/07-lavanderia.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/07-lavanderia.jpg" alt="Lavanderia do apartamento à venda na Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Lavanderia</span>
         </button>
         <button class="gallery-item featured" data-cat="area" data-caption="Vista da sacada — piscina e quadra do condomínio">
-          <img src="fotos/08-varanda.jpg" alt="Vista da sacada para a piscina e quadra do Condomínio Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Vista da sacada</span>
+          <picture><source type="image/webp" srcset="fotos/08-varanda-640.webp 640w, fotos/08-varanda.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/08-varanda.jpg" alt="Vista da sacada para a piscina e quadra do Condomínio Ville Dijon, Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Vista da sacada</span>
         </button>
         <button class="gallery-item" data-cat="condominio" data-caption="Academia do condomínio">
-          <img src="fotos/08-academia-1.jpg" alt="Academia do Condomínio Ville Dijon na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Academia</span>
+          <picture><source type="image/webp" srcset="fotos/08-academia-1-640.webp 640w, fotos/08-academia-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/08-academia-1.jpg" alt="Academia do Condomínio Ville Dijon na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Academia</span>
         </button>
         <button class="gallery-item" data-cat="condominio" data-caption="Quadra poliesportiva">
-          <img src="fotos/08-quadra.jpg" alt="Quadra poliesportiva do condomínio com apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Quadra</span>
+          <picture><source type="image/webp" srcset="fotos/08-quadra-640.webp 640w, fotos/08-quadra.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/08-quadra.jpg" alt="Quadra poliesportiva do condomínio com apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Quadra</span>
         </button>
         <button class="gallery-item" data-cat="condominio" data-caption="Brinquedoteca">
-          <img src="fotos/09-brinquedoteca-1.jpg" alt="Brinquedoteca do Condomínio Ville Dijon, Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Brinquedoteca</span>
+          <picture><source type="image/webp" srcset="fotos/09-brinquedoteca-1-640.webp 640w, fotos/09-brinquedoteca-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/09-brinquedoteca-1.jpg" alt="Brinquedoteca do Condomínio Ville Dijon, Vila Mascote, Zona Sul de São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Brinquedoteca</span>
         </button>
         <button class="gallery-item" data-cat="condominio" data-caption="Sauna">
-          <img src="fotos/09-sauna-1.jpg" alt="Sauna do condomínio do apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Sauna</span>
+          <picture><source type="image/webp" srcset="fotos/09-sauna-1-640.webp 640w, fotos/09-sauna-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/09-sauna-1.jpg" alt="Sauna do condomínio do apartamento à venda na Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Sauna</span>
         </button>
         <button class="gallery-item" data-cat="condominio" data-caption="Fachada do Condomínio Ville Dijon">
-          <img src="fotos/predio-1.jpg" alt="Fachada do Condomínio Ville Dijon na Av. Damasceno Vieira, 726, Vila Mascote" loading="lazy" width="1200" height="800"><span class="tag">Fachada</span>
+          <picture><source type="image/webp" srcset="fotos/predio-1-640.webp 640w, fotos/predio-1.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/predio-1.jpg" alt="Fachada do Condomínio Ville Dijon na Av. Damasceno Vieira, 726, Vila Mascote" loading="lazy" width="1200" height="800"></picture><span class="tag">Fachada</span>
         </button>
         <button class="gallery-item" data-cat="condominio" data-caption="Condomínio Ville Dijon — vista externa">
-          <img src="fotos/predio-2.jpg" alt="Vista externa do prédio do apartamento à venda na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"><span class="tag">Fachada</span>
+          <picture><source type="image/webp" srcset="fotos/predio-2-640.webp 640w, fotos/predio-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/predio-2.jpg" alt="Vista externa do prédio do apartamento à venda na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Fachada</span>
         </button>
       </div>
     </div>
@@ -973,7 +977,7 @@
             <div class="hood-stat"><strong>94%</strong><span>recomendam o bairro para pets</span></div>
             <div class="hood-stat"><strong>71%</strong><span>destacam as ruas arborizadas</span></div>
           </div>
-          <p class="source-note reveal">Avaliações de moradores do bairro — QuintoAndar, 2026.</p>
+          <p class="source-note reveal">Avaliações de moradores do bairro: <a href="https://www.quintoandar.com.br/regioes-atendidas/vila-mascote-sao-paulo-sp-brasil-5rdyztwjp1" target="_blank" rel="noopener">QuintoAndar</a>, consulta em julho de 2026.</p>
         </div>
         <div class="map-wrap reveal">
           <iframe
@@ -1027,7 +1031,7 @@
             <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
           </div>
         </div>
-        <p class="source-note">Preço médio do m² e de apartamentos de 2 quartos no bairro (R$ 510 mil): QuintoAndar · m² de lançamentos: Apto — julho/2026. Valores de referência.</p>
+        <p class="source-note">Preço médio do m² e de apartamentos de 2 quartos no bairro (R$ 510 mil): <a href="https://www.quintoandar.com.br/comprar/imovel/vila-mascote-sao-paulo-sp-brasil" target="_blank" rel="noopener">QuintoAndar</a>; m² de lançamentos: <a href="https://apto.vc/br/sp/sao-paulo/vila-mascote?status=lancamento" target="_blank" rel="noopener">Apto</a>. Consulta em julho de 2026; valores de referência.</p>
       </div>
     </div>
   </section>
@@ -1082,7 +1086,7 @@
       <div class="faq-list reveal">
         <details class="faq-item">
           <summary>Como funcionam as visitas?</summary>
-          <p>As visitas são feitas somente com agendamento prévio, direto com o proprietário pelo <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp (11) 98358-7422</a>. Por questões de segurança do condomínio e do inquilino atual (que permanece no imóvel até 31/07), o número do apartamento é informado apenas a compradores realmente interessados, com visita previamente marcada.</p>
+          <p>As visitas são feitas somente com agendamento prévio, direto com o proprietário pelo <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp (11) 98358-7422</a>. Por questões de segurança do condomínio e do ocupante atual, o número do apartamento é informado apenas a compradores realmente interessados, com visita previamente marcada.</p>
         </details>
         <details class="faq-item">
           <summary>A venda é direto com o proprietário?</summary>
@@ -1219,7 +1223,7 @@
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
     <button class="lightbox-btn lightbox-close" id="lbClose" aria-label="Fechar">✕</button>
     <button class="lightbox-btn lightbox-prev" id="lbPrev" aria-label="Foto anterior">‹</button>
-    <img id="lbImg" src="" alt="">
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
     <p class="lightbox-caption" id="lbCaption"></p>
     <button class="lightbox-btn lightbox-next" id="lbNext" aria-label="Próxima foto">›</button>
   </div>
@@ -1287,7 +1291,7 @@
     }
     function showItem(item) {
       const img = item.querySelector("img");
-      lbImg.src = img.src;
+      lbImg.src = img.currentSrc || img.src;
       lbImg.alt = img.alt;
       lbCaption.textContent = item.dataset.caption || "";
     }
