@@ -4,7 +4,7 @@ Site estático do anúncio: **https://pantani.github.io/apartamento-vila-mascote
 
 - 55 m² · 2 dormitórios (1 suíte) · 2 banheiros · 1 vaga + depósito privativo
 - Av. Damasceno Vieira, 726 – Vila Mascote – São Paulo/SP
-- R$ 480.000
+- R$ 470.000
 
 ## Estrutura
 
