@@ -46,7 +46,7 @@
     "url": "https://pantani.github.io/apartamento-vila-mascote/",
     "description": "Apartamento de 55 m² totalmente reformado, com 2 dormitórios (1 suíte), 2 banheiros, 1 vaga de garagem, depósito privativo de aproximadamente 1 m² e sol da manhã e da tarde. Condomínio Ville Dijon, Vila Mascote, Zona Sul de São Paulo.",
     "datePosted": "2026-07-24",
-    "dateModified": "2026-08-03",
+    "dateModified": "2026-08-05",
     "image": [
       "https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2",
       "https://pantani.github.io/apartamento-vila-mascote/fotos/01-sala-1.jpg",
@@ -647,6 +647,9 @@
     .partners-lead { color: var(--ink-mute); font-size: 14px; margin-bottom: 24px; }
 
     /* ---------- Brokers ---------- */
+    .brokers { background: var(--paper-warm); scroll-margin-top: 64px; }
+    .broker-head { max-width: 760px; margin-bottom: 36px; }
+    .broker-head .section-lead { margin-bottom: 0; }
     .broker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-bottom: 36px; }
     .broker-card {
       background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
@@ -661,8 +664,15 @@
     }
     .broker-card li:last-child { border-bottom: none; }
     .broker-card li::before { content: "•"; color: var(--bronze); font-weight: 700; flex-shrink: 0; }
-    .broker-cta { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-    .broker-cta p { font-size: 13.5px; color: var(--ink-mute); max-width: 420px; }
+    .broker-cta {
+      display: flex; align-items: center; justify-content: space-between; gap: 28px;
+      padding: 30px; border-radius: var(--radius); background: var(--dark); color: #fff;
+    }
+    .broker-cta-copy { max-width: 590px; }
+    .broker-cta h3 { margin-bottom: 6px; font-size: 22px; line-height: 1.15; }
+    .broker-cta p { color: rgba(255,255,255,0.68); font-size: 14.5px; }
+    .broker-actions { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+    .broker-actions svg { width: 19px; height: 19px; flex: 0 0 auto; }
 
     /* ---------- Footer ---------- */
     footer {
@@ -693,8 +703,12 @@
       .highlight-photo:first-child { grid-column: 1 / -1; grid-row: auto; }
       .highlight-photo { min-height: 0; }
       .highlights-actions .btn { width: 100%; justify-content: center; }
+      .about-media .accent { right: 0; }
       .gallery-grid:not(.expanded) .gallery-item:nth-child(n+7) { display: none; }
       .compare-checklist { grid-template-columns: 1fr; gap: 0; }
+      .broker-cta { align-items: stretch; flex-direction: column; padding: 24px; }
+      .broker-actions { width: 100%; }
+      .broker-actions .btn { width: 100%; justify-content: center; }
       .mobile-actions {
         position: fixed; left: 0; right: 0; bottom: 0; z-index: 150;
         display: grid; grid-template-columns: 1fr 1.35fr; gap: 8px;
@@ -1231,11 +1245,64 @@
     </div>
   </section>
 
+  <!-- ===== Brokers ===== -->
+  <section class="brokers" id="corretores">
+    <div class="container">
+      <div class="broker-head">
+        <span class="eyebrow reveal">Parceria profissional</span>
+        <h2 class="reveal">Informações para corretores e imobiliárias</h2>
+        <p class="section-lead reveal">Use esta landing como fonte oficial do imóvel. As condições abaixo mantêm os anúncios consistentes e as visitas organizadas com segurança.</p>
+      </div>
+
+      <div class="broker-grid">
+        <article class="broker-card reveal">
+          <h3>Divulgação</h3>
+          <ul>
+            <li>Parceria sem exclusividade</li>
+            <li>Os anúncios do proprietário permanecem ativos</li>
+            <li>Use somente os dados desta landing e as fotos aprovadas</li>
+            <li>Preço final, comissão e condições comerciais devem ser alinhados antes da publicação</li>
+            <li>Alterações de dados ou promessas sobre o imóvel exigem aprovação prévia</li>
+          </ul>
+        </article>
+
+        <article class="broker-card reveal">
+          <h3>Visitas e aprovação</h3>
+          <ul>
+            <li>Confirme disponibilidade e valor antes de anunciar</li>
+            <li>Envie a versão final do anúncio para aprovação</li>
+            <li>Informe antecipadamente o CRECI do corretor responsável</li>
+            <li>As visitas são agendadas, confirmadas e acompanhadas</li>
+            <li>O número do apartamento é informado apenas para comprador qualificado</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="broker-cta reveal">
+        <div class="broker-cta-copy">
+          <h3>Material aprovado para seu anúncio</h3>
+          <p>Baixe as 30 fotos originais em um único arquivo ZIP ou fale com o proprietário para alinhar a divulgação.</p>
+        </div>
+        <div class="broker-actions">
+          <a class="btn btn-primary" href="fotos-apartamento-vila-mascote.zip" download="fotos-apartamento-vila-mascote.zip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v12"></path>
+              <path d="m7 10 5 5 5-5"></path>
+              <path d="M5 21h14"></path>
+            </svg>
+            Baixar fotos (.zip)
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/5511983587422?text=Ol%C3%A1%20Danilo%2C%20sou%20corretor%28a%29%20e%20gostaria%20de%20alinhar%20a%20divulga%C3%A7%C3%A3o%20do%20apartamento%20da%20Vila%20Mascote" target="_blank" rel="noopener">Falar sobre parceria</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Footer ===== -->
   <footer>
     <div class="container footer-inner">
       <span>Apartamento à venda na Vila Mascote · Zona Sul · São Paulo/SP</span>
-      <span>Venda direta · <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp (11) 98358-7422</a> · <a href="mailto:danpantani@gmail.com">E-mail</a> · <a href="corretores.html" rel="nofollow">Para corretores</a></span>
+      <span>Venda direta · <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp (11) 98358-7422</a> · <a href="mailto:danpantani@gmail.com">E-mail</a> · <a href="#corretores">Para corretores</a></span>
     </div>
   </footer>
 

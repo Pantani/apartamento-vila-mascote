@@ -10,7 +10,7 @@ Prospective buyers evaluating the Vila Mascote apartment and licensed real-estat
 
 ## Product Purpose
 
-Present the apartment accurately and confidently, help buyers decide whether to schedule a visit, and give brokers a reliable source of approved listing material. Success means fewer factual inconsistencies, qualified enquiries, and a straightforward path from evaluation to contact.
+Present the apartment accurately and confidently in one canonical landing page, help buyers decide whether to schedule a visit, and give brokers a reliable source of approved listing material. Success means fewer factual inconsistencies, qualified enquiries, and a straightforward path from evaluation to contact.
 
 ## Brand Personality
 
@@ -26,6 +26,7 @@ Avoid cluttered marketplace layouts, artificial scarcity, inflated luxury claims
 - Keep the path from evaluation to owner contact obvious and low-friction.
 - Use restrained visual polish to support credibility rather than spectacle.
 - Preserve consistent source material for buyers, brokers, and third-party listings.
+- Keep buyer and broker journeys in one canonical landing page with clear anchored sections.
 - Make important conditions readable before a visitor takes action.
 
 ## Accessibility & Inclusion
