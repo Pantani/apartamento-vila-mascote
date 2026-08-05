@@ -238,6 +238,7 @@
     }
 
     section { padding: clamp(64px, 9vw, 96px) 0; }
+    section[id] { scroll-margin-top: 68px; }
     section h2 { font-size: clamp(30px, 4vw, 44px); margin-bottom: 18px; text-wrap: balance; }
     .section-lead { max-width: 640px; color: var(--ink-soft); font-size: 17px; margin-bottom: 44px; text-wrap: pretty; }
     .warm { background: var(--paper-warm); }
@@ -262,14 +263,26 @@
       font-size: 19px; color: #fff; text-decoration: none;
       letter-spacing: 0.02em; white-space: nowrap;
     }
-    .nav-brand span { color: var(--gold); }
-    .nav-links { display: flex; gap: 26px; align-items: center; list-style: none; }
+    .nav-brand-dot { color: var(--gold); }
+    .nav-links { display: flex; gap: clamp(12px, 1.5vw, 22px); align-items: center; list-style: none; }
     .nav-links a {
       color: rgba(255,255,255,0.85); text-decoration: none;
       font-size: 14px; font-weight: 500; letter-spacing: 0.02em;
       transition: color .2s;
     }
     .nav-links a:hover { color: var(--gold); }
+    .nav-broker {
+      background: var(--gold-light); color: var(--dark) !important;
+      padding: 8px 15px; border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 100px; white-space: nowrap;
+      box-shadow: 0 7px 20px rgba(216,178,106,0.22);
+      min-height: 44px; display: inline-flex; align-items: center;
+      transition: background .2s, transform .2s, box-shadow .2s;
+    }
+    .nav-broker:hover {
+      background: #f0d599; color: var(--dark) !important;
+      transform: translateY(-1px); box-shadow: 0 9px 24px rgba(216,178,106,0.3);
+    }
     .nav-cta {
       background: var(--btn); color: #fff !important;
       padding: 9px 20px; border-radius: 100px;
@@ -279,9 +292,18 @@
       transition: background .2s;
     }
     .nav-cta:hover { background: var(--btn-hover); }
-    @media (max-width: 860px) {
-      .nav-links li:not(.cta-li) { display: none; }
+    .nav-links a:focus-visible {
+      outline: 2px solid var(--gold-light); outline-offset: 3px;
+    }
+    @media (max-width: 1100px) {
+      .nav-brand-location, .nav-brand-dot { display: none; }
+    }
+    @media (max-width: 920px) {
+      .nav-links { gap: 8px; }
+      .nav-links li:not(.broker-li):not(.cta-li) { display: none; }
       .nav-brand { font-size: 16px; }
+      .nav-broker { padding-left: 13px; padding-right: 13px; }
+      .nav-cta { padding-left: 16px; padding-right: 16px; }
     }
 
     /* ---------- Hero ---------- */
@@ -647,7 +669,7 @@
     .partners-lead { color: var(--ink-mute); font-size: 14px; margin-bottom: 24px; }
 
     /* ---------- Brokers ---------- */
-    .brokers { background: var(--paper-warm); scroll-margin-top: 64px; }
+    .brokers { background: var(--paper-warm); }
     .broker-head { max-width: 760px; margin-bottom: 36px; }
     .broker-head .section-lead { margin-bottom: 0; }
     .broker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-bottom: 36px; }
@@ -730,14 +752,16 @@
   <!-- ===== Nav ===== -->
   <nav class="nav" id="nav" aria-label="Navegação principal">
     <div class="container nav-inner">
-      <a class="nav-brand" href="#">Ville Dijon <span>·</span> Vila Mascote</a>
+      <a class="nav-brand" href="#">Ville Dijon <span class="nav-brand-dot" aria-hidden="true">·</span> <span class="nav-brand-location">Vila Mascote</span></a>
       <ul class="nav-links">
-        <li><a href="#imovel">O imóvel</a></li>
         <li><a href="#fotos-destaque">Fotos</a></li>
+        <li><a href="#imovel">O imóvel</a></li>
         <li><a href="#planta">Planta</a></li>
+        <li><a href="#condominio">Condomínio</a></li>
         <li><a href="#localizacao">Localização</a></li>
         <li><a href="#valores">Valores</a></li>
-        <li><a href="#faq">Dúvidas</a></li>
+        <li><a href="#financiamento">Financiamento</a></li>
+        <li class="broker-li"><a class="nav-broker" href="#corretores">Corretores</a></li>
         <li class="cta-li"><a class="nav-cta" href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">Agendar visita</a></li>
       </ul>
     </div>
