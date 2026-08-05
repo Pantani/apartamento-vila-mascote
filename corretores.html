@@ -39,17 +39,34 @@
     .source { margin-top: 20px; padding: 24px; background: var(--warm); border-left: 4px solid var(--bronze); }
     .source p { margin: 0 0 10px; color: var(--soft); }
     .source a { color: var(--bronze); font-weight: 700; }
+    .media-kit {
+      display: flex; align-items: center; justify-content: space-between; gap: 32px;
+      margin-top: 28px; padding: 30px; border: 1px solid var(--line); background: var(--warm);
+    }
+    .media-kit-copy { max-width: 590px; }
+    .media-kit h2 { margin-bottom: 8px; font-size: 25px; }
+    .media-kit p { margin: 0; color: var(--soft); }
     .cta { margin-top: 48px; padding: 34px; color: #fff; background: var(--dark); }
     .cta h2 { margin-bottom: 10px; }
     .cta p { margin: 0 0 22px; color: rgba(255,255,255,.7); }
-    .button { display: inline-flex; align-items: center; min-height: 48px; padding: 12px 24px; border-radius: 999px; color: #fff; background: var(--bronze); font-weight: 700; text-decoration: none; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      min-height: 48px; padding: 12px 24px; border-radius: 999px;
+      color: #fff; background: var(--bronze); font-weight: 700; text-decoration: none;
+      transition: background .2s ease, box-shadow .2s ease;
+    }
+    .button:hover { color: #fff; background: #76551e; }
+    .button:focus-visible { outline: 3px solid #d8b26a; outline-offset: 3px; }
+    .button svg { width: 20px; height: 20px; flex: 0 0 auto; }
     footer { padding: 28px 0; color: var(--soft); font-size: 13px; border-top: 1px solid var(--line); }
     @media (max-width: 720px) {
       header { padding-top: 38px; }
       .back { margin-bottom: 28px; }
       .facts { grid-template-columns: 1fr 1fr; }
       .grid { grid-template-columns: 1fr; }
-      .panel, .cta { padding: 24px; }
+      .panel, .media-kit, .cta { padding: 24px; }
+      .media-kit { align-items: stretch; flex-direction: column; gap: 20px; }
+      .media-kit .button { width: 100%; }
     }
   </style>
 </head>
@@ -121,6 +138,21 @@
         <p>Fonte oficial do imóvel para texto, fotos, planta, itens inclusos e custos:</p>
         <a href="https://pantani.github.io/apartamento-vila-mascote/">pantani.github.io/apartamento-vila-mascote/</a>
       </div>
+
+      <section class="media-kit" aria-labelledby="media-kit-title">
+        <div class="media-kit-copy">
+          <h2 id="media-kit-title">Fotos para divulgação</h2>
+          <p>Baixe as 30 fotos originais e aprovadas em um único arquivo ZIP, prontas para usar no anúncio.</p>
+        </div>
+        <a class="button" href="fotos-apartamento-vila-mascote.zip" download="fotos-apartamento-vila-mascote.zip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12"></path>
+            <path d="m7 10 5 5 5-5"></path>
+            <path d="M5 21h14"></path>
+          </svg>
+          Baixar todas as fotos (.zip)
+        </a>
+      </section>
 
       <section class="cta">
         <h2>Tem um comprador com este perfil?</h2>
