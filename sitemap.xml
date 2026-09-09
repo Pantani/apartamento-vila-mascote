@@ -7,7 +7,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=3</image:loc>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=4</image:loc>
       <image:title>Apartamento à venda na Vila Mascote – 2 quartos, 55 m², R$ 468.000</image:title>
     </image:image>
     <image:image>
@@ -83,14 +83,6 @@
       <image:title>Segundo dormitório do apartamento de 2 quartos à venda na Vila Mascote, São Paulo</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/05-quarto-2.jpg</image:loc>
-      <image:title>Quarto do apartamento reformado no Condomínio Ville Dijon, Vila Mascote</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/05-quarto-3.jpg</image:loc>
-      <image:title>Dormitório com porcelanato no apartamento à venda na Zona Sul de São Paulo</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/05-quarto-5.jpg</image:loc>
       <image:title>Visão geral do segundo quarto do apartamento reformado na Vila Mascote</image:title>
     </image:image>
@@ -133,6 +125,42 @@
     <image:image>
       <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/predio-2.jpg</image:loc>
       <image:title>Vista externa do prédio do apartamento à venda na Vila Mascote, São Paulo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/01-sala-5.jpg</image:loc>
+      <image:title>Sala do apartamento à venda na Vila Mascote com porcelanato, pendente e acesso à sacada</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/01-sala-6.jpg</image:loc>
+      <image:title>Sala do apartamento reformado no Condomínio Ville Dijon com parede amadeirada e banco embutido</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/03-suite-5.jpg</image:loc>
+      <image:title>Suíte com closet planejado e banheiro privativo no apartamento à venda na Vila Mascote</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/03-suite-6.jpg</image:loc>
+      <image:title>Suíte do apartamento reformado na Vila Mascote com parede amadeirada e ventilador de teto</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/03-suite-closet.jpg</image:loc>
+      <image:title>Closet planejado da suíte com prateleiras e gaveteiro, apartamento à venda na Vila Mascote</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/04-banheiro-suite-3.jpg</image:loc>
+      <image:title>Banheiro da suíte com box amplo e revestimento amadeirado, apartamento na Vila Mascote</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/05-quarto-6.jpg</image:loc>
+      <image:title>Segundo dormitório com bancada de madeira para home office, apartamento na Vila Mascote</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/05-quarto-7.jpg</image:loc>
+      <image:title>Segundo dormitório com bancada sob a janela e trilho de spots, Vila Mascote</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pantani.github.io/apartamento-vila-mascote/fotos/06-banheiro-4.jpg</image:loc>
+      <image:title>Banheiro social do apartamento reformado na Vila Mascote com box e revestimento em relevo</image:title>
     </image:image>
   </url>
 </urlset>

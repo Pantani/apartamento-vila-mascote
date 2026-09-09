@@ -13,7 +13,7 @@ Site estático do anúncio: **https://pantani.github.io/apartamento-vila-mascote
 
 - `index.html` — landing page única para compradores e corretores (HTML/CSS/JS puros, sem build)
 - `fotos/` — fotos do imóvel e planta com áreas por ambiente
-- `fotos-apartamento-vila-mascote.zip` — 30 fotos originais aprovadas para download pelos corretores
+- `fotos-apartamento-vila-mascote.zip` — 37 fotos originais aprovadas para download pelos corretores
 - `share-preview.jpg` — card 1200x630 de compartilhamento (WhatsApp, Facebook, X)
 - `tools/share-preview.html` — gerador do card acima; ao mudar o preço, edite aqui e reexporte
 - `sitemap.xml` / `robots.txt` — SEO
