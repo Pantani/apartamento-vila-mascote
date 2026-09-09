@@ -15,3 +15,4 @@ HTML/CSS/JS puros num único `index.html`, sem build step, publicada via GitHub 
 | Data | Mudança | Alvo | Motivo |
 |------|---------|------|--------|
 | 2026-09-09 | Construção inicial do harness (6 agentes, 5 skills) | completo | Auditoria encontrou preço divergente entre README e site, derivados obsoletos no simulador e seção comparativa sem números |
+| 2026-09-09 | IPTU corrigido para R$ 188,91/ano; nota sobre re-spawn no lugar de SendMessage | skills/listing-harness, CLAUDE.md | Proprietário informou IPTU real (site publicava ~3x maior); SendMessage indisponível na sessão |

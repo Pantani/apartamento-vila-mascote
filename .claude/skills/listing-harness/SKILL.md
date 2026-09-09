@@ -64,6 +64,26 @@ Resumo ao usuário: o que mudou, o que foi verificado com evidência, o que fico
 
 Publicação (`git push`) só com autorização explícita — o push publica ao vivo, sem staging.
 
+## Continuação de agentes
+
+`SendMessage` pode estar desabilitado nesta sessão. **Não projete o fluxo contando com continuar um agente já encerrado.**
+
+Para revisar o trabalho de um especialista, dispare um agente novo do mesmo tipo e passe como insumo (a) o arquivo de spec que ele mesmo produziu, (b) a correção a aplicar e (c) a lista explícita do que deve permanecer inalterado. Peça que ele reescreva o arquivo inteiro e acrescente no topo uma seção `## Revisão N — o que mudou`.
+
+Sem o item (c), a revisão tende a descartar decisões já tomadas.
+
+## Fatos do imóvel já decididos pelo proprietário
+
+Estes valores foram confirmados diretamente pelo proprietário e **prevalecem sobre qualquer inferência de portal ou do próprio site**:
+
+| Fato | Valor | Observação |
+|------|-------|-----------|
+| Preço | R$ 468.000 | Escolha do proprietário, ciente de que a análise recomendava faixa maior |
+| IPTU | **R$ 188,91/ano** | O site publicava ≈ R$ 49/mês (~3x maior). Publicar **apenas em valor anual** |
+| Condomínio | R$ 1.343/mês | Mesmo patamar do prédio |
+| Depósito | "aproximadamente 1 m²" no texto corrido | 1,07 m² apenas na tabela técnica da planta |
+| Comparativo | Faixa agregada | Nunca identificar unidade vizinha individualmente |
+
 ## Fluxo de dados
 
 Arquivo, em `_workspace/`, nomeado `{fase}_{agente}_{artefato}.md`. Intermediários são preservados para auditoria. Retornos dos subagentes carregam só o resumo; o conteúdo vai para arquivo.

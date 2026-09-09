@@ -18,8 +18,8 @@
   <meta property="og:title" content="Apartamento à Venda na Vila Mascote – 2 Quartos, Suíte, 55 m² | R$ 468.000">
   <meta property="og:description" content="Direto com o proprietário: 55 m² reformados, 2 quartos, suíte, vaga, depósito e sol da manhã e da tarde. Condomínio Ville Dijon com lazer e portaria 24h.">
   <meta property="og:url" content="https://pantani.github.io/apartamento-vila-mascote/">
-  <meta property="og:image" content="https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2">
-  <meta property="og:image:secure_url" content="https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2">
+  <meta property="og:image" content="https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=3">
+  <meta property="og:image:secure_url" content="https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=3">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,7 +29,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Apartamento à Venda na Vila Mascote – 2 Quartos, Suíte, 55 m² | R$ 468.000">
   <meta name="twitter:description" content="Direto com o proprietário: 55 m² reformados, suíte, vaga, depósito e sol da manhã e da tarde no Condomínio Ville Dijon.">
-  <meta name="twitter:image" content="https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2">
+  <meta name="twitter:image" content="https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=3">
   <meta name="twitter:image:alt" content="Apartamento à venda na Vila Mascote: 55 m², 2 quartos, R$ 468.000, totalmente reformado">
 
   <meta name="theme-color" content="#1f1b16">
@@ -49,9 +49,13 @@
     "inLanguage": "pt-BR",
     "description": "Apartamento de 55 m² totalmente reformado, com 2 dormitórios (1 suíte), 2 banheiros, 1 vaga de garagem, depósito privativo de aproximadamente 1 m² e sol da manhã e da tarde. Condomínio Ville Dijon, Vila Mascote, Zona Sul de São Paulo.",
     "datePosted": "2026-07-24",
+    "datePublished": "2026-07-24",
     "dateModified": "2026-09-09",
+    "isPartOf": {"@id": "https://pantani.github.io/apartamento-vila-mascote/#site"},
+    "primaryImageOfPage": "https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=3",
+    "mainEntity": {"@id": "https://pantani.github.io/apartamento-vila-mascote/#imovel"},
     "image": [
-      "https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2",
+      "https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=3",
       "https://pantani.github.io/apartamento-vila-mascote/fotos/01-sala-1.jpg",
       "https://pantani.github.io/apartamento-vila-mascote/fotos/01-sala-2.jpg",
       "https://pantani.github.io/apartamento-vila-mascote/fotos/02-cozinha-1.jpg",
@@ -68,15 +72,23 @@
     ],
     "about": {
       "@type": "Apartment",
+      "@id": "https://pantani.github.io/apartamento-vila-mascote/#imovel",
       "name": "Apartamento Vila Mascote – Ville Dijon",
       "floorSize": {
         "@type": "QuantitativeValue",
         "value": 55,
         "unitCode": "MTK"
       },
+      "numberOfRooms": {
+        "@type": "QuantitativeValue",
+        "value": 4,
+        "unitCode": "ROM"
+      },
       "numberOfBedrooms": 2,
       "numberOfBathroomsTotal": 2,
+      "numberOfFullBathrooms": 2,
       "petsAllowed": true,
+      "tourBookingPage": "https://wa.me/5511983587422",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Damasceno Vieira, 726",
@@ -84,6 +96,11 @@
         "addressRegion": "SP",
         "postalCode": "04363-040",
         "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.646010,
+        "longitude": -46.664913
       },
       "containedInPlace": {
         "@type": "ApartmentComplex",
@@ -105,8 +122,9 @@
         {"@type": "LocationFeatureSpecification", "name": "Salão de festas", "value": true},
         {"@type": "LocationFeatureSpecification", "name": "Sauna", "value": true},
         {"@type": "LocationFeatureSpecification", "name": "Brinquedoteca", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Vaga de garagem", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Depósito privativo", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Vaga de garagem", "value": 1, "unitCode": "C62"},
+        {"@type": "LocationFeatureSpecification", "name": "Depósito privativo", "value": 1.07, "unitCode": "MTK"},
+        {"@type": "LocationFeatureSpecification", "name": "Sacada com fechamento de vidro", "value": 2.4, "unitCode": "MTK"},
         {"@type": "LocationFeatureSpecification", "name": "Sol da manhã e da tarde", "value": true}
       ]
     },
@@ -116,7 +134,10 @@
       "priceCurrency": "BRL",
       "businessFunction": "https://purl.org/goodrelations/v1#Sell",
       "availability": "https://schema.org/InStock",
+      "validFrom": "2026-07-24",
+      "priceValidUntil": "2027-09-09",
       "url": "https://pantani.github.io/apartamento-vila-mascote/",
+      "itemOffered": {"@id": "https://pantani.github.io/apartamento-vila-mascote/#imovel"},
       "seller": {
         "@type": "Person",
         "name": "Proprietário",
@@ -154,7 +175,15 @@
         "name": "Qual o preço do m² deste apartamento na Vila Mascote?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "R$ 8.509/m², calculados sobre o valor de R$ 468.000 e a área útil de 55 m². Para uma comparação justa, use imóveis com área útil, suíte, reforma, vaga, depósito e estrutura de condomínio semelhantes."
+          "text": "R$ 8.509/m², calculados sobre o valor de R$ 468.000 e a área útil de 55 m². Para referência, a faixa apurada pelos portais para a Vila Mascote em 09/09/2026 vai de R$ 9.661/m² (QuintoAndar) a R$ 10.407/m² para apartamentos de 2 dormitórios (Proprietário Direto) — vale lembrar que essa média inclui prédios mais novos e plantas maiores que as de 55 m² do Ville Dijon. A comparação mais direta está na seção de valores da página, com as outras unidades do próprio condomínio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Existem outros apartamentos à venda no mesmo prédio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, e achamos melhor você saber. Em 09/09/2026 havia outros 5 apartamentos de 55 m² e 2 dormitórios anunciados no Ville Dijon, entre R$ 460.000 e R$ 500.000, com pedido médio de R$ 486.800 (QuintoAndar). Este é o 2º mais barato entre as 6 unidades e, entre as que têm suíte, o mais barato. Não listamos as unidades individualmente por respeito aos vizinhos — mas qualquer pessoa consegue conferir a faixa nos portais."
         }
       },
       {
@@ -186,7 +215,7 @@
         "name": "O que fica no apartamento?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Armários da cozinha, dos banheiros e da suíte, aquecedor a gás Rinnai, cooktop e forno a gás, ventilador de teto, luminárias, box com nicho, fechamento de vidro na sacada, torneira gourmet com 4 funções, depósito privativo de 1 m² e a sobra de ≈ 10% de todos os revestimentos."
+          "text": "Armários da cozinha, dos banheiros e da suíte, aquecedor a gás Rinnai, cooktop e forno a gás, ventilador de teto, luminárias, box com nicho, fechamento de vidro na sacada, torneira gourmet com 4 funções, depósito privativo de aproximadamente 1 m² e a sobra de ≈ 10% de todos os revestimentos."
         }
       },
       {
@@ -202,39 +231,42 @@
         "name": "Quais são os custos mensais?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Condomínio de R$ 1.343/mês (com lazer completo e portaria 24h) e IPTU de aproximadamente R$ 49/mês, em 12 parcelas."
+          "text": "O custo mensal é o condomínio: R$ 1.343. O IPTU é anual e fecha em R$ 188,91 — o carnê está disponível para conferência. O condomínio é a despesa do prédio, rateada entre as unidades, e cobre piscina (inclusive aquecida), academia, quadra, salão de festas, salão de jogos, brinquedoteca, espaço gourmet, churrasqueira, playground e portaria 24 horas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Por que o condomínio é de R$ 1.343?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Porque o prédio mantém piscina (inclusive aquecida), academia, quadra, salão de festas, salão de jogos, brinquedoteca, espaço gourmet, churrasqueira, playground e portaria 24 horas. O condomínio é a despesa do edifício, rateada entre as unidades — é o custo do prédio, não uma particularidade deste apartamento. O IPTU entra à parte e é anual: R$ 188,91 no carnê."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O IPTU é mesmo R$ 188,91 por ano?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "É. O valor é anual, não mensal, e está no carnê do IPTU — que fica à disposição de quem visitar o imóvel ou pedir por mensagem."
         }
       }
     ]
   }
   </script>
 
-  <!-- Structured Data: Site + Page -->
+  <!-- Structured Data: Site -->
+  <!-- RealEstateListing já É um subtipo de WebPage. Um segundo nó WebPage na mesma URL
+       criaria uma página duplicada dentro do próprio grafo; suas propriedades migraram
+       para o bloco do listing acima. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://pantani.github.io/apartamento-vila-mascote/#site",
-        "url": "https://pantani.github.io/apartamento-vila-mascote/",
-        "name": "Apartamento Vila Mascote – Ville Dijon",
-        "description": "Anúncio oficial do apartamento de 55 m² à venda na Vila Mascote, Zona Sul de São Paulo, direto com o proprietário.",
-        "inLanguage": "pt-BR"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://pantani.github.io/apartamento-vila-mascote/#pagina",
-        "url": "https://pantani.github.io/apartamento-vila-mascote/",
-        "name": "Apartamento à venda na Vila Mascote – 55 m², suíte e vaga",
-        "isPartOf": {"@id": "https://pantani.github.io/apartamento-vila-mascote/#site"},
-        "about": {"@id": "https://pantani.github.io/apartamento-vila-mascote/#anuncio"},
-        "primaryImageOfPage": "https://pantani.github.io/apartamento-vila-mascote/share-preview.jpg?v=2",
-        "datePublished": "2026-07-24",
-        "dateModified": "2026-09-09",
-        "inLanguage": "pt-BR"
-      }
-    ]
+    "@type": "WebSite",
+    "@id": "https://pantani.github.io/apartamento-vila-mascote/#site",
+    "url": "https://pantani.github.io/apartamento-vila-mascote/",
+    "name": "Apartamento Vila Mascote – Ville Dijon",
+    "description": "Anúncio oficial do apartamento de 55 m² à venda na Vila Mascote, Zona Sul de São Paulo, direto com o proprietário.",
+    "inLanguage": "pt-BR"
   }
   </script>
 
@@ -394,6 +426,13 @@
       font-size: clamp(32px, 4.2vw, 48px); font-weight: 600; color: var(--gold-light);
     }
     .hero-price em { font-style: normal; font-size: 14px; color: rgba(255,255,255,0.75); }
+    .hero-compare-link { margin: -14px 0 26px; }
+    .hero-compare-link a {
+      color: var(--gold-light); font-size: 14.5px;
+      text-decoration: underline; text-underline-offset: 4px;
+    }
+    .hero-compare-link a:hover { color: #f0d599; }
+    .hero-compare-link a:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; }
     .hero-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
     .chip {
       border: 1px solid rgba(255,255,255,0.35);
@@ -654,6 +693,12 @@
     .compare h3 { font-size: clamp(22px, 2.6vw, 28px); line-height: 1.15; margin-bottom: 10px; text-wrap: balance; }
     .compare-lead { color: var(--ink-soft); font-size: 15.5px; margin-bottom: 28px; max-width: 680px; text-wrap: pretty; }
     .compare-lead strong { color: var(--ink); font-weight: 600; }
+    .compare h4 {
+      font-family: var(--font-display); font-size: 18px; font-weight: 600;
+      color: var(--ink); margin: 26px 0 8px;
+    }
+    .compare-para { color: var(--ink-soft); font-size: 15.5px; max-width: 680px; text-wrap: pretty; }
+    .compare-para strong { color: var(--ink); font-weight: 600; }
     .compare-checklist { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 32px; list-style: none; }
     .compare-checklist li { position: relative; padding: 12px 0 12px 28px; border-bottom: 1px solid var(--line); color: var(--ink-soft); font-size: 15px; }
     .compare-checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--bronze-deep); font-weight: 700; }
@@ -833,16 +878,17 @@
     <div class="container hero-content">
       <span class="eyebrow">Vila Mascote · Zona Sul de São Paulo · Venda direta com o proprietário</span>
       <h1>Apartamento à venda na Vila Mascote: 2 quartos com suíte, 55 m², totalmente reformado</h1>
-      <p class="hero-sub">No Condomínio Ville Dijon, com lazer completo e portaria 24h. Reforma recente de alto padrão, sol da manhã e da tarde e ambientes prontos para morar.</p>
+      <p class="hero-sub">No Condomínio Ville Dijon, com lazer completo e portaria 24h. Reforma recente, sol da manhã e da tarde, e uma planta acima do padrão do prédio: suíte e 2 banheiros, quando o predominante aqui é 1 banheiro.</p>
       <div class="hero-price">
-        <strong class="js-price">R$ 468.000</strong>
-        <em><span class="js-price-m2">R$ 8.509/m²</span> · Condomínio R$ 1.343/mês · IPTU ≈ R$ 49/mês</em>
+        <strong data-prop="price">R$ 468.000</strong>
+        <em><span data-prop="pricePerM2">R$ 8.509/m²</span> · Condomínio <span data-prop="condoFee">R$ 1.343</span>/mês · IPTU <span data-prop="iptuAnnual">R$ 188,91</span>/ano</em>
       </div>
+      <p class="hero-compare-link"><a href="#comparativo">Como este preço se compara ao do prédio</a></p>
       <div class="hero-chips" role="group" aria-label="Resumo do imóvel">
-        <span class="chip">55 m²</span>
-        <span class="chip">2 quartos · 1 suíte</span>
-        <span class="chip">2 banheiros</span>
-        <span class="chip">1 vaga + depósito de 1 m²</span>
+        <span class="chip"><span data-prop="areaM2">55</span> m²</span>
+        <span class="chip"><span data-prop="bedrooms">2</span> quartos · <span data-prop="suites">1</span> suíte</span>
+        <span class="chip"><span data-prop="bathrooms">2</span> banheiros</span>
+        <span class="chip"><span data-prop="parking">1</span> vaga + depósito de aproximadamente <span data-prop="storageM2">1</span> m²</span>
         <span class="chip">Sol da manhã e da tarde</span>
         <span class="chip">Sacada envidraçada</span>
       </div>
@@ -857,9 +903,9 @@
   <div class="stats" role="region" aria-label="Números do imóvel">
     <div class="container">
       <div class="stats-grid">
-        <div class="stat"><strong>55 m²</strong><span>Área útil bem distribuída</span></div>
-        <div class="stat"><strong>2 quartos</strong><span>1 deles é suíte</span></div>
-        <div class="stat"><strong>1 vaga</strong><span>+ depósito privativo de 1 m²</span></div>
+        <div class="stat"><strong><span data-prop="areaM2">55</span> m²</strong><span>Área útil bem distribuída</span></div>
+        <div class="stat"><strong><span data-prop="bedrooms">2</span> quartos</strong><span>1 deles é suíte</span></div>
+        <div class="stat"><strong><span data-prop="parking">1</span> vaga</strong><span>+ depósito privativo de aproximadamente <span data-prop="storageM2">1</span> m²</span></div>
         <div class="stat"><strong>100%</strong><span>Reformado, pronto para morar</span></div>
       </div>
     </div>
@@ -874,7 +920,7 @@
           <h2 class="reveal">Veja os ambientes antes dos detalhes</h2>
           <p class="section-lead reveal">Uma seleção direta dos espaços que mais pesam na decisão: sala, sacada, cozinha, suíte e banheiro.</p>
         </div>
-        <a class="btn btn-outline reveal" href="#galeria">Ver as 30 fotos</a>
+        <a class="btn btn-outline reveal" href="#galeria">Ver as <span data-prop="photoCount">30</span> fotos</a>
       </div>
       <div class="highlights-grid reveal">
         <figure class="highlight-photo">
@@ -914,7 +960,7 @@
           <h2>Um apartamento reformado de verdade na Zona Sul</h2>
           <p>Quem pesquisa <strong>apartamento à venda na Vila Mascote</strong> encontra dezenas de anúncios "reformados" que, na visita, decepcionam. Este é diferente: reforma completa e recente, com <strong>materiais de alto padrão</strong> e <strong>porcelanato de excelente qualidade</strong> em todos os pisos e revestimentos, do primeiro ao último ambiente.</p>
           <p>Os banheiros têm acabamento de apartamento novo: nicho no box, torneiras em inox, <strong>bancadas em mármore</strong>, cuba de sobrepor, armários em MDF e vasos com fechamento lento. As louças são majoritariamente <strong>Deca</strong>.</p>
-          <p>Além do <strong>depósito privativo</strong> de 1 m² no local indicado na planta, a venda inclui uma reserva técnica de <strong>10% de todos os revestimentos</strong> da reforma. Se algum dia uma peça precisar ser trocada, o material idêntico já está guardado.</p>
+          <p>Além do <strong>depósito privativo</strong> de aproximadamente <span data-prop="storageM2">1</span> m² no local indicado na planta, a venda inclui uma reserva técnica de <strong>10% de todos os revestimentos</strong> da reforma. Se algum dia uma peça precisar ser trocada, o material idêntico já está guardado.</p>
         </div>
         <div class="about-media reveal">
           <div class="accent" aria-hidden="true"></div>
@@ -949,7 +995,7 @@
         <div class="feature-card reveal">
           <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7d5a1f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"></path><path d="M4 7.5l8 4.5 8-4.5M12 12v9"></path></svg></div>
           <h3>Depósito privativo</h3>
-          <p>1 m² no local indicado na planta. Espaço extra que guarda a reserva técnica dos revestimentos da reforma.</p>
+          <p>Aproximadamente <span data-prop="storageM2">1</span> m² no local indicado na planta. Espaço extra que guarda a reserva técnica dos revestimentos da reforma.</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7d5a1f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5M3 18.5h18M5 11V7a1.5 1.5 0 0 1 1.5-1.5h11A1.5 1.5 0 0 1 19 7v4"></path></svg></div>
@@ -971,19 +1017,19 @@
       <div class="split-grid">
         <div class="reveal">
           <span class="eyebrow">Planta do imóvel</span>
-          <h2>55 m² bem distribuídos, sem espaço desperdiçado</h2>
+          <h2><span data-prop="areaM2">55</span> m² bem distribuídos, sem espaço desperdiçado</h2>
           <p class="section-lead" style="margin-bottom:28px">Sala ampla integrada à sacada envidraçada, suíte com armários, cozinha conectada à lavanderia. Áreas de piso por ambiente, conforme o levantamento técnico da reforma:</p>
           <ul class="rooms-list">
-            <li><span>Sala de estar e jantar</span><strong>14,69 m²</strong></li>
-            <li><span>Suíte</span><strong>9,44 m²</strong></li>
-            <li><span>Quarto 2</span><strong>8,32 m²</strong></li>
-            <li><span>Cozinha e lavanderia</span><strong>7,70 m²</strong></li>
-            <li><span>Banheiro da suíte</span><strong>2,50 m²</strong></li>
-            <li><span>Banheiro social</span><strong>2,17 m²</strong></li>
-            <li><span>Sacada com fechamento de vidro</span><strong>2,40 m²</strong></li>
-            <li><span>Depósito</span><strong>1,07 m²</strong></li>
+            <li><span>Sala de estar e jantar</span><strong data-room="sala">14,69 m²</strong></li>
+            <li><span>Suíte</span><strong data-room="suite">9,44 m²</strong></li>
+            <li><span>Quarto 2</span><strong data-room="quarto2">8,32 m²</strong></li>
+            <li><span>Cozinha e lavanderia</span><strong data-room="cozinha">7,70 m²</strong></li>
+            <li><span>Banheiro da suíte</span><strong data-room="banheiroSuite">2,50 m²</strong></li>
+            <li><span>Banheiro social</span><strong data-room="banheiroSocial">2,17 m²</strong></li>
+            <li><span>Sacada com fechamento de vidro</span><strong data-room="sacada">2,40 m²</strong></li>
+            <li><span>Depósito</span><strong data-room="deposito">1,07 m²</strong></li>
           </ul>
-          <p class="planta-note">Áreas internas de piso (medidas da reforma). Área útil total do apartamento: 55 m².</p>
+          <p class="planta-note">As medidas acima são de <strong>piso</strong> — a área de chão de cada ambiente, conforme o levantamento técnico da reforma. Somadas, dão menos que os <span data-prop="areaM2">55</span> m² de área útil do apartamento, porque a área útil também considera a espessura das paredes e as áreas de circulação, que não aparecem como ambiente nesta lista. As duas medidas estão certas; elas só medem coisas diferentes.</p>
         </div>
         <div class="reveal">
           <button class="planta-card" id="plantaBtn" type="button">
@@ -1017,7 +1063,7 @@
         <li>Fechamento de vidro na sacada</li>
         <li>Torneira gourmet na cozinha com 4 funções</li>
         <li>Sobra de 10% dos revestimentos e piso</li>
-        <li>Depósito privativo de 1 m²</li>
+        <li>Depósito privativo de aproximadamente <span data-prop="storageM2">1</span> m²</li>
       </ul>
     </div>
   </section>
@@ -1027,7 +1073,7 @@
     <div class="container">
       <span class="eyebrow reveal">Galeria</span>
       <h2 class="reveal">Conheça cada ambiente do apartamento</h2>
-      <p class="section-lead reveal">30 fotos reais, sem filtro e sem surpresa na visita. Toque em qualquer foto para ampliar.</p>
+      <p class="section-lead reveal"><span data-prop="photoCount">30</span> fotos reais, sem filtro e sem surpresa na visita. Toque em qualquer foto para ampliar.</p>
       <div class="gallery-filters reveal" role="group" aria-label="Filtrar fotos por ambiente">
         <button class="active" type="button" data-filter="all" aria-pressed="true">Todas</button>
         <button type="button" data-filter="sala" aria-pressed="false">Sala</button>
@@ -1130,7 +1176,7 @@
           <picture><source type="image/webp" srcset="fotos/predio-2-640.webp 640w, fotos/predio-2.webp 1200w" sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 1200px) 50vw, 560px"><img src="fotos/predio-2.jpg" alt="Vista externa do prédio do apartamento à venda na Vila Mascote, São Paulo" loading="lazy" width="1200" height="800"></picture><span class="tag">Fachada</span>
         </button>
       </div>
-      <button class="btn btn-primary gallery-more reveal" id="galleryMore" type="button" aria-controls="galleryGrid" aria-expanded="false">Ver todas as 30 fotos</button>
+      <button class="btn btn-primary gallery-more reveal" id="galleryMore" type="button" aria-controls="galleryGrid" aria-expanded="false">Ver todas as <span data-prop="photoCount">30</span> fotos</button>
     </div>
   </section>
 
@@ -1139,7 +1185,7 @@
     <div class="container">
       <span class="eyebrow reveal">Condomínio Ville Dijon</span>
       <h2 class="reveal">Lazer de clube, segurança 24 horas</h2>
-      <p class="section-lead reveal">Piscina, academia, quadra e sauna dentro de casa — tudo incluso no condomínio de R$ 1.343/mês.</p>
+      <p class="section-lead reveal">Piscina, academia, quadra e sauna dentro de casa — tudo incluso no condomínio de <span data-prop="condoFee">R$ 1.343</span>/mês.</p>
       <div class="condo-grid">
         <div class="condo-item reveal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8a6423" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z"></path></svg><span>Portaria 24 horas</span></div>
         <div class="condo-item reveal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8a6423" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M3 19c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M16 11V6a2 2 0 0 0-4 0"></path></svg><span>Piscina</span></div>
@@ -1161,8 +1207,8 @@
           <span class="eyebrow reveal">Localização</span>
           <h2 class="reveal">Morar na Vila Mascote, Zona Sul de São Paulo</h2>
           <div class="address-card reveal">
-            <strong>Av. Damasceno Vieira, 726</strong>
-            <span>Vila Mascote · São Paulo/SP · Condomínio Ville Dijon</span>
+            <strong data-prop="address">Av. Damasceno Vieira, 726</strong>
+            <span>Vila Mascote · São Paulo/SP · <span data-prop="condoName">Condomínio Ville Dijon</span></span>
           </div>
           <p class="location-text reveal">Quem busca apartamento na Zona Sul encontra na Vila Mascote o equilíbrio raro entre tranquilidade e conveniência: ruas arborizadas, padarias, mercados e restaurantes no entorno, com acesso rápido às avenidas da região e ao transporte público.</p>
           <div class="hood-stats reveal">
@@ -1194,32 +1240,36 @@
       <div class="costs-cards">
         <div class="cost-card highlight reveal">
           <em>Valor de venda</em>
-          <strong class="js-price">R$ 468.000</strong>
-          <span><span class="js-price-m2">R$ 8.509/m²</span> · reformado, pronto para morar</span>
+          <strong data-prop="price">R$ 468.000</strong>
+          <span><span data-prop="pricePerM2">R$ 8.509/m²</span> · reformado, pronto para morar</span>
         </div>
         <div class="cost-card reveal">
           <em>Condomínio</em>
-          <strong>R$ 1.343<span style="font-size:15px">/mês</span></strong>
-          <span>Com lazer completo e portaria 24h</span>
+          <strong><span data-prop="condoFee">R$ 1.343</span><span style="font-size:15px">/mês</span></strong>
+          <span>Piscina (inclusive aquecida), academia, quadra, salão de festas, brinquedoteca, espaço gourmet e portaria 24h</span>
         </div>
         <div class="cost-card reveal">
           <em>IPTU</em>
-          <strong>≈ R$ 49<span style="font-size:15px">/mês</span></strong>
-          <span>Em 12 parcelas</span>
+          <strong><span data-prop="iptuAnnual">R$ 188,91</span><span style="font-size:15px">/ano</span></strong>
+          <span>Valor anual, conforme o carnê</span>
         </div>
       </div>
-      <p class="source-note reveal">ITBI, registro, escritura e eventuais custos de financiamento não estão incluídos. Esses valores variam conforme o comprador e a operação.</p>
+      <p class="source-note reveal">O custo mensal recorrente do apartamento é o condomínio: <span data-prop="condoFee">R$ 1.343</span>. O IPTU é anual e fecha em <span data-prop="iptuAnnual">R$ 188,91</span> no carnê — não é uma despesa mensal relevante aqui. O condomínio é rateado entre as unidades do Ville Dijon e cobre a manutenção do prédio inteiro: piscina (inclusive aquecida), academia, quadra, salão de festas, salão de jogos, brinquedoteca, espaço gourmet, churrasqueira, playground e portaria 24 horas. É o custo do prédio, não uma particularidade deste apartamento. ITBI, registro, escritura e eventuais custos de financiamento não estão incluídos — esses valores variam conforme o comprador e a operação.</p>
+      <div class="compare reveal">
+        <h3>Uma planta acima do padrão do prédio</h3>
+        <p class="compare-lead">O padrão predominante do Ville Dijon é <span data-prop="bedrooms">2</span> dormitórios com 1 banheiro. Este apartamento tem <strong>suíte e <span data-prop="bathrooms">2</span> banheiros</strong> — configuração minoritária no condomínio, e a mais barata entre as unidades com suíte anunciadas hoje aqui. Some a isso a reforma completa, o depósito privativo de aproximadamente <span data-prop="storageM2">1</span> m² e o sol da manhã e da tarde.</p>
+        <p class="source-note">Configuração do prédio conforme fichas do condomínio na Lopes, na Loft e no Imovelweb, e anúncios ativos no QuintoAndar, consultados em 09/09/2026.</p>
+      </div>
       <div class="compare reveal" id="comparativo">
-        <h3>Como comparar este anúncio com outros imóveis</h3>
-        <p class="compare-lead">O valor pedido equivale a <strong class="js-price-m2">R$ 8.509/m²</strong>. Para uma comparação justa, use anúncios com área útil e características realmente próximas.</p>
-        <ul class="compare-checklist">
-          <li>55 m² de área útil e planta com medidas por ambiente</li>
-          <li>2 quartos, sendo 1 suíte, e 2 banheiros</li>
-          <li>Reforma completa e itens que permanecem no imóvel</li>
-          <li>1 vaga e depósito privativo de aproximadamente 1 m²</li>
-          <li>Sol da manhã e da tarde</li>
-          <li>Condomínio com lazer e portaria 24 horas</li>
-        </ul>
+        <h3>Como este preço se posiciona</h3>
+        <p class="compare-lead">A comparação mais justa para um apartamento não é a média de uma cidade: é o apartamento do lado. Por isso os números abaixo são do próprio Ville Dijon e do bairro, com a data em que foram consultados.</p>
+        <h4>No próprio condomínio</h4>
+        <p class="compare-para">Há hoje outros 5 apartamentos de <span data-prop="areaM2">55</span> m² e 2 dormitórios à venda no Ville Dijon, anunciados entre R$ 460.000 e R$ 500.000. O pedido médio dessas unidades é R$ 486.800 e a mediana, R$ 495.000. Este apartamento, a <span data-prop="price">R$ 468.000</span>, é o <strong>2º mais barato entre as 6 unidades de 55 m² à venda no prédio</strong> e está R$ 27.000 abaixo da mediana do próprio condomínio.</p>
+        <h4>No bairro</h4>
+        <p class="compare-para">A <span data-prop="pricePerM2">R$ 8.509/m²</span>, o valor está abaixo da faixa de preço do metro quadrado apurada para a Vila Mascote pelos portais: R$ 9.661/m² (QuintoAndar), R$ 9.802/m² (ImovelGuide), R$ 10.150/m² (Loft) e R$ 10.407/m² para apartamentos de 2 dormitórios (Proprietário Direto). O preço médio de um apartamento de 2 quartos no bairro é R$ 529.000.</p>
+        <h4>Uma ressalva honesta sobre essa comparação</h4>
+        <p class="compare-para">A média do bairro inclui prédios mais novos e plantas maiores. O Ville Dijon é de 1996 e suas unidades de <span data-prop="areaM2">55</span> m² negociam abaixo dessa média como um todo — ou seja, parte da diferença vem do prédio, não desta unidade. O número que realmente importa é o primeiro: dentro do mesmo edifício, com a mesma metragem e o mesmo condomínio, este apartamento está entre os mais baratos.</p>
+        <p class="source-note">Comparáveis consultados em 09/09/2026. Fontes: páginas do condomínio Ville Dijon e do bairro Vila Mascote no QuintoAndar; ImovelGuide; Loft; Proprietário Direto. Preços de anúncio (pedido), não de fechamento — anúncios de terceiros mudam sem aviso. Valores por faixa agregada; não identificamos unidades individuais do condomínio.</p>
       </div>
     </div>
   </section>
@@ -1238,7 +1288,7 @@
           <div class="sim-field">
             <div class="sim-field-head">
               <label for="entrada">Entrada (<span id="entradaPct">20</span>%)</label>
-              <strong id="entradaFmt">R$ 94.000</strong>
+              <strong id="entradaFmt" data-prop="simDownPayment">R$ 93.600</strong>
             </div>
             <input id="entrada" type="range" min="10" max="80" step="5" value="20">
           </div>
@@ -1257,9 +1307,9 @@
             <input id="juros" type="range" min="8" max="16" step="0.25" value="11.5">
           </div>
           <div class="sim-results">
-            <div><em>Valor financiado</em><strong id="financiadoFmt">R$ 376.000</strong></div>
-            <div><em>Parcela inicial ≈</em><strong class="hl" id="parcelaFmt">R$ 3.562/mês</strong></div>
-            <div><em>Renda sugerida</em><strong id="rendaFmt">R$ 11.874</strong></div>
+            <div><em>Valor financiado</em><strong id="financiadoFmt" data-prop="simFinanced">R$ 374.400</strong></div>
+            <div><em>Parcela inicial ≈</em><strong class="hl" id="parcelaFmt">R$ 3.547/mês</strong></div>
+            <div><em>Renda sugerida</em><strong id="rendaFmt">R$ 11.824</strong></div>
           </div>
         </div>
       </div>
@@ -1274,7 +1324,7 @@
       <div class="faq-list reveal">
         <details class="faq-item">
           <summary>Como funcionam as visitas?</summary>
-          <p>As visitas são feitas somente com agendamento prévio, direto com o proprietário pelo <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp (11) 98358-7422</a>. Por questões de segurança do condomínio e do ocupante atual, o número do apartamento é informado apenas a compradores realmente interessados, com visita previamente marcada.</p>
+          <p>As visitas são feitas somente com agendamento prévio, direto com o proprietário pelo <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp <span data-prop="phoneDisplay">(11) 98358-7422</span></a>. Por questões de segurança do condomínio e do ocupante atual, o número do apartamento é informado apenas a compradores realmente interessados, com visita previamente marcada.</p>
         </details>
         <details class="faq-item">
           <summary>A venda é direto com o proprietário?</summary>
@@ -1282,7 +1332,11 @@
         </details>
         <details class="faq-item">
           <summary>Qual o preço do m² deste apartamento na Vila Mascote?</summary>
-          <p><span class="js-price-m2">R$ 8.509/m²</span>, calculados sobre o valor de <span class="js-price">R$ 468.000</span> e a área útil de 55 m². Ao comparar, use imóveis com área útil, suíte, reforma, vaga, depósito e estrutura de condomínio semelhantes.</p>
+          <p><span data-prop="pricePerM2">R$ 8.509/m²</span>, calculados sobre o valor de <span data-prop="price">R$ 468.000</span> e a área útil de <span data-prop="areaM2">55</span> m². Para referência, a faixa apurada pelos portais para a Vila Mascote em 09/09/2026 vai de R$ 9.661/m² (QuintoAndar) a R$ 10.407/m² para apartamentos de 2 dormitórios (Proprietário Direto) — vale lembrar que essa média inclui prédios mais novos e plantas maiores que as de <span data-prop="areaM2">55</span> m² do Ville Dijon. A comparação mais direta está na <a href="#comparativo">seção de valores</a>, com as outras unidades do próprio condomínio.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Existem outros apartamentos à venda no mesmo prédio?</summary>
+          <p>Sim, e achamos melhor você saber. Em 09/09/2026 havia outros 5 apartamentos de <span data-prop="areaM2">55</span> m² e 2 dormitórios anunciados no Ville Dijon, entre R$ 460.000 e R$ 500.000, com pedido médio de R$ 486.800 (QuintoAndar). Este é o 2º mais barato entre as 6 unidades e, entre as que têm suíte, o mais barato. Não listamos as unidades individualmente por respeito aos vizinhos — mas qualquer pessoa consegue conferir a faixa nos portais.</p>
         </details>
         <details class="faq-item">
           <summary>Aceita financiamento e FGTS?</summary>
@@ -1298,7 +1352,7 @@
         </details>
         <details class="faq-item">
           <summary>O que fica no apartamento?</summary>
-          <p>Armários da cozinha, dos banheiros e da suíte, aquecedor a gás Rinnai, cooktop e forno a gás, ventilador de teto, luminárias, box com nicho, fechamento de vidro na sacada, torneira gourmet com 4 funções, depósito privativo de 1 m² e a sobra de ≈ 10% de todos os revestimentos.</p>
+          <p>Armários da cozinha, dos banheiros e da suíte, aquecedor a gás Rinnai, cooktop e forno a gás, ventilador de teto, luminárias, box com nicho, fechamento de vidro na sacada, torneira gourmet com 4 funções, depósito privativo de aproximadamente <span data-prop="storageM2">1</span> m² e a sobra de ≈ 10% de todos os revestimentos.</p>
         </details>
         <details class="faq-item">
           <summary>Para que serve a sobra de revestimentos?</summary>
@@ -1306,7 +1360,15 @@
         </details>
         <details class="faq-item">
           <summary>Quais são os custos mensais?</summary>
-          <p>Condomínio de R$ 1.343/mês (com lazer completo e portaria 24h) e IPTU de aproximadamente R$ 49/mês, em 12 parcelas.</p>
+          <p>O custo mensal é o condomínio: <span data-prop="condoFee">R$ 1.343</span>. O IPTU é anual e fecha em <span data-prop="iptuAnnual">R$ 188,91</span> — o carnê está disponível para conferência. O condomínio é a despesa do prédio, rateada entre as unidades, e cobre piscina (inclusive aquecida), academia, quadra, salão de festas, salão de jogos, brinquedoteca, espaço gourmet, churrasqueira, playground e portaria 24 horas.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Por que o condomínio é de <span data-prop="condoFee">R$ 1.343</span>?</summary>
+          <p>Porque o prédio mantém piscina (inclusive aquecida), academia, quadra, salão de festas, salão de jogos, brinquedoteca, espaço gourmet, churrasqueira, playground e portaria 24 horas. O condomínio é a despesa do edifício, rateada entre as unidades — é o custo do prédio, não uma particularidade deste apartamento. O IPTU entra à parte e é anual: <span data-prop="iptuAnnual">R$ 188,91</span> no carnê.</p>
+        </details>
+        <details class="faq-item">
+          <summary>O IPTU é mesmo <span data-prop="iptuAnnual">R$ 188,91</span> por ano?</summary>
+          <p>É. O valor é anual, não mensal, e está no carnê do IPTU — que fica à disposição de quem visitar o imóvel ou pedir por mensagem.</p>
         </details>
       </div>
     </div>
@@ -1362,7 +1424,7 @@
       <div class="broker-cta reveal">
         <div class="broker-cta-copy">
           <h3>Material aprovado para seu anúncio</h3>
-          <p>Baixe as 30 fotos originais em um único arquivo ZIP ou fale com o proprietário para alinhar a divulgação.</p>
+          <p>Baixe as <span data-prop="photoCount">30</span> fotos originais em um único arquivo ZIP ou fale com o proprietário para alinhar a divulgação.</p>
         </div>
         <div class="broker-actions">
           <a class="btn btn-primary" href="fotos-apartamento-vila-mascote.zip" download="fotos-apartamento-vila-mascote.zip">
@@ -1385,7 +1447,7 @@
   <footer>
     <div class="container footer-inner">
       <span>Apartamento à venda na Vila Mascote · Zona Sul · São Paulo/SP</span>
-      <span>Venda direta · <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp (11) 98358-7422</a> · <a href="mailto:danpantani@gmail.com">E-mail</a> · <a href="#corretores">Para corretores</a></span>
+      <span>Venda direta · <a href="https://wa.me/5511983587422?text=Ol%C3%A1%2C%20estou%20interessado%20no%20im%C3%B3vel%20da%20Vila%20Mascote%3A%20https%3A%2F%2Fpantani.github.io%2Fapartamento-vila-mascote%2F" target="_blank" rel="noopener">WhatsApp <span data-prop="phoneDisplay">(11) 98358-7422</span></a> · <a href="mailto:danpantani@gmail.com">E-mail</a> · <a href="#corretores">Para corretores</a></span>
     </div>
   </footer>
 
@@ -1541,20 +1603,113 @@
       if (e.key === "ArrowRight") step(1);
     });
 
-    // Single source of truth for every price-derived figure on the page.
-    // The HTML ships with the correct values so crawlers and no-JS visitors
-    // see them; this block keeps them in sync when PRICE/AREA_M2 change.
-    // The JSON-LD offer is intentionally static — not every crawler runs JS.
-    const PRICE = 468000;
-    const AREA_M2 = 55;
-    const fmt = (v) => "R$ " + Math.round(v).toLocaleString("pt-BR");
+    // ===================== FONTE ÚNICA DE VERDADE DO IMÓVEL =====================
+    // Cada FATO do imóvel existe uma única vez, aqui. Cada DERIVADO (R$/m², entrada,
+    // valor financiado, parcela) é calculado — nunca digitado.
+    //
+    // O HTML servido JÁ contém os valores corretos escritos: crawlers, o preview de
+    // compartilhamento e visitantes sem JS leem o arquivo, não o DOM pós-JS.
+    // syncProperty() é reforço contra divergência futura, não a origem do valor.
+    //
+    // CÓPIAS ESTÁTICAS (a hidratação NÃO alcança — atualize à mão ao mudar um fato):
+    //   index.html  <title>, meta description, og:*, twitter:*, os 3 blocos JSON-LD,
+    //               alt da planta (linha ~992), alt do lightbox da planta (~1495)
+    //   sitemap.xml <lastmod> e <image:title>
+    //   README.md   linhas de área/quartos, endereço, preço, condomínio, IPTU, nº de fotos
+    // Invariante de frescor: sitemap <lastmod> == JSON-LD "dateModified" == data do commit.
+    const PROPERTY = {
+      // --- FATOS ---
+      price:        468000,   // R$, valor de venda
+      areaM2:       55,       // m², área útil
+      condoFee:     1343,     // R$/mês, condomínio (pendente de confirmação no boleto)
+      iptuAnnual:   188.91,   // R$/ANO. Base anual por decisão do proprietário.
+                              // NÃO derivar valor mensal daqui e NÃO publicar /mês.
+      bedrooms:     2,
+      suites:       1,
+      bathrooms:    2,
+      parking:      1,
+      storageM2:    1.07,     // m²; publicado como "aproximadamente 1 m²" em texto corrido
+      balconyM2:    2.40,     // m², sacada com fechamento de vidro
+      address:      "Av. Damasceno Vieira, 726",
+      neighborhood: "Vila Mascote",
+      city:         "São Paulo",
+      state:        "SP",
+      postalCode:   "04363-040",
+      condoName:    "Condomínio Ville Dijon",
+      phoneE164:    "+5511983587422",
+      phoneDisplay: "(11) 98358-7422",
+      email:        "danpantani@gmail.com",
+      photoCount:   30,
+      datePosted:   "2026-07-24",
+      dateModified: "2026-09-09",
+      // Validade da oferta no JSON-LD. 12 meses, decisão do proprietário.
+      // NUNCA deixar vencer: uma data no passado é pior que a ausência do campo.
+      priceValidUntil: "2027-09-09",
 
-    document.querySelectorAll(".js-price").forEach((el) => {
-      el.textContent = fmt(PRICE);
-    });
-    document.querySelectorAll(".js-price-m2").forEach((el) => {
-      el.textContent = fmt(PRICE / AREA_M2) + "/m²";
-    });
+      // Áreas de piso por ambiente (levantamento técnico da reforma)
+      rooms: [
+        { key: "sala",           name: "Sala de estar e jantar",        m2: 14.69 },
+        { key: "suite",          name: "Suíte",                          m2:  9.44 },
+        { key: "quarto2",        name: "Quarto 2",                       m2:  8.32 },
+        { key: "cozinha",        name: "Cozinha e lavanderia",           m2:  7.70 },
+        { key: "banheiroSuite",  name: "Banheiro da suíte",              m2:  2.50 },
+        { key: "banheiroSocial", name: "Banheiro social",                m2:  2.17 },
+        { key: "sacada",         name: "Sacada com fechamento de vidro", m2:  2.40 },
+        { key: "deposito",       name: "Depósito",                       m2:  1.07 },
+      ],
+
+      // Cômodos no sentido schema.org (exclui banheiros, sacada e depósito)
+      roomCount: 4,
+
+      // Defaults do simulador
+      sim: { downPct: 20, years: 30, ratePctYear: 11.5, incomeRatio: 0.30 },
+    };
+
+    // --- DERIVADOS (nunca digitados à mão em lugar nenhum) ---
+    PROPERTY.pricePerM2     = PROPERTY.price / PROPERTY.areaM2;
+    PROPERTY.downPayment    = PROPERTY.price * PROPERTY.sim.downPct / 100;
+    PROPERTY.financedAmount = PROPERTY.price - PROPERTY.downPayment;
+
+    // --- Formatação: uma função por formato, para não existir "R$ 8.509" e "R$ 8509" ---
+    const fmtBRL     = (v) => "R$ " + Math.round(v).toLocaleString("pt-BR");
+    const fmtBRLCent = (v) => "R$ " + v.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const fmtM2      = (v) => v.toLocaleString("pt-BR", { maximumFractionDigits: 2 });
+    const fmtInt     = (v) => String(v);
+    const fmt = fmtBRL; // usado pelo simulador
+
+    function syncProperty() {
+      const view = {
+        price:          fmtBRL(PROPERTY.price),
+        pricePerM2:     fmtBRL(PROPERTY.pricePerM2) + "/m²",
+        areaM2:         fmtM2(PROPERTY.areaM2),
+        condoFee:       fmtBRL(PROPERTY.condoFee),
+        iptuAnnual:     fmtBRLCent(PROPERTY.iptuAnnual),
+        bedrooms:       fmtInt(PROPERTY.bedrooms),
+        suites:         fmtInt(PROPERTY.suites),
+        bathrooms:      fmtInt(PROPERTY.bathrooms),
+        parking:        fmtInt(PROPERTY.parking),
+        storageM2:      fmtM2(Math.round(PROPERTY.storageM2)),
+        storageM2Exact: fmtM2(PROPERTY.storageM2),
+        address:        PROPERTY.address,
+        condoName:      PROPERTY.condoName,
+        phoneDisplay:   PROPERTY.phoneDisplay,
+        photoCount:     fmtInt(PROPERTY.photoCount),
+        simDownPayment: fmtBRL(PROPERTY.downPayment),
+        simFinanced:    fmtBRL(PROPERTY.financedAmount),
+      };
+      document.querySelectorAll("[data-prop]").forEach((el) => {
+        const k = el.dataset.prop;
+        if (k in view) el.textContent = view[k];
+      });
+      const byKey = {};
+      PROPERTY.rooms.forEach((r) => { byKey[r.key] = r; });
+      document.querySelectorAll("[data-room]").forEach((el) => {
+        const r = byKey[el.dataset.room];
+        // Tabela técnica: sempre 2 casas ("7,70 m²"), como no levantamento da reforma.
+        if (r) el.textContent = r.m2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " m²";
+      });
+    }
+    syncProperty();
 
     // Financing simulator (Price table)
     const entradaEl = document.getElementById("entrada");
@@ -1565,8 +1720,8 @@
       const entradaPct = Number(entradaEl.value);
       const anos = Number(prazoEl.value);
       const taxa = Number(jurosEl.value);
-      const entradaR = PRICE * entradaPct / 100;
-      const financiado = PRICE - entradaR;
+      const entradaR = PROPERTY.price * entradaPct / 100;
+      const financiado = PROPERTY.price - entradaR;
       const i = Math.pow(1 + taxa / 100, 1 / 12) - 1;
       const n = anos * 12;
       const parcela = financiado * i / (1 - Math.pow(1 + i, -n));
@@ -1577,7 +1732,7 @@
       document.getElementById("taxaLabel").textContent = String(taxa).replace(".", ",") + "% a.a.";
       document.getElementById("financiadoFmt").textContent = fmt(financiado);
       document.getElementById("parcelaFmt").textContent = fmt(parcela) + "/mês";
-      document.getElementById("rendaFmt").textContent = fmt(parcela / 0.3);
+      document.getElementById("rendaFmt").textContent = fmt(parcela / PROPERTY.sim.incomeRatio);
     }
     [entradaEl, prazoEl, jurosEl].forEach((el) => el.addEventListener("input", updateSim));
     updateSim();

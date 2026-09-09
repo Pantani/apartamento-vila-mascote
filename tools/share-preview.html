@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="robots" content="noindex, nofollow"><style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  .card {
+    position:relative; width:1200px; height:630px;
+    background-image:url("../fotos/01-sala-1.jpg");
+    background-size:cover; background-position:center 42%;
+  }
+  .card::after {
+    content:""; position:absolute; inset:0;
+    background:
+      linear-gradient(100deg, rgba(24,20,16,.94) 0%, rgba(24,20,16,.90) 32%, rgba(26,22,17,.58) 62%, rgba(28,23,18,.32) 100%),
+      linear-gradient(180deg, rgba(20,17,13,.30) 0%, rgba(20,17,13,0) 40%);
+  }
+  .inner {
+    position:absolute; inset:0; z-index:2;
+    padding:74px 70px 62px; display:flex; flex-direction:column; justify-content:flex-start;
+  }
+  .eyebrow {
+    font-family:"Avenir Next",Avenir,"Helvetica Neue",Arial,sans-serif;
+    font-weight:500; font-size:19px; letter-spacing:.155em; text-transform:uppercase;
+    color:#dbc59d; margin-bottom:34px; white-space:nowrap;
+  }
+  h1 {
+    font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    font-weight:600; font-size:59px; line-height:1.14; color:#fff; letter-spacing:-.004em;
+    text-shadow:0 2px 26px rgba(0,0,0,.35);
+  }
+  .price {
+    font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    font-weight:600; font-size:82px; line-height:1; color:#e9c887; margin-top:56px;
+    text-shadow:0 2px 26px rgba(0,0,0,.35);
+  }
+  .meta {
+    font-family:"Avenir Next",Avenir,"Helvetica Neue",Arial,sans-serif;
+    font-weight:400; font-size:26px; color:#f2ece2; margin-top:24px; white-space:nowrap;
+    text-shadow:0 1px 14px rgba(0,0,0,.4);
+  }
+  .pill {
+    align-self:flex-start; margin-top:38px;
+    font-family:"Avenir Next",Avenir,"Helvetica Neue",Arial,sans-serif;
+    font-weight:400; font-size:21px; color:#e3c795;
+    border:1.5px solid rgba(216,178,106,.72); border-radius:999px; padding:13px 30px 15px;
+  }
+</style></head><body>
+  <div class="card"><div class="inner">
+    <div class="eyebrow">Apartamento à venda &nbsp;·&nbsp; Vila Mascote &nbsp;·&nbsp; São Paulo</div>
+    <h1>Totalmente reformado,<br>alto padrão, pronto para morar</h1>
+    <div class="price">R$ 468.000</div>
+    <div class="meta">55 m² &nbsp;·&nbsp; 2 quartos (1 suíte) &nbsp;·&nbsp; 2 banheiros &nbsp;·&nbsp; vaga + depósito</div>
+    <div class="pill">Direto com o proprietário &nbsp;·&nbsp; Condomínio Ville Dijon</div>
+  </div></div>
+</body></html>
