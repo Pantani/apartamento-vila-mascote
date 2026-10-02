@@ -5,7 +5,7 @@ Site estático do anúncio: **https://pantani.github.io/apartamento-vila-mascote
 - 55 m² · 2 dormitórios (1 suíte) · 2 banheiros · 1 vaga + depósito privativo · sol da manhã e da tarde
 - Av. Damasceno Vieira, 726 – Vila Mascote – São Paulo/SP
 - R$ 456.000 (R$ 8.291/m²)
-- Condomínio R$ 1.343/mês · IPTU R$ 188,91/ano (valor anual, conforme o carnê — não converter para mensal)
+- Condomínio R$ 1.246,70/mês · IPTU R$ 188,91/ano (valor anual, conforme o carnê — não converter para mensal)
 
 > Os valores acima têm fonte única no objeto `PROPERTY`, dentro do `index.html`. Ao alterar qualquer um deles, atualize o `PROPERTY` **e** as cópias estáticas listadas no comentário que o acompanha (`<head>`, JSON-LD, `sitemap.xml` e este README).
 
